@@ -91,7 +91,9 @@ class InformasiController extends Controller
      */
     public function destroy(Informasi $informasi)
     {
-        return $informasi;
+
+        Storage::delete($informasi->file);
+        return back()->with('success', 'Informasi berhasil dihapus!');
     }
 
     public function lihat(Informasi $informasi)
