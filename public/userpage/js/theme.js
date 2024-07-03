@@ -1,15 +1,15 @@
-(function($) {
+(function ($) {
   "use strict";
 
   var nav_offset_top = $("header").height() + 50;
   /*-------------------------------------------------------------------------------
-	  Navbar 
-	-------------------------------------------------------------------------------*/
+    Navbar 
+  -------------------------------------------------------------------------------*/
 
   //* Navbar Fixed
   function navbarFixed() {
     if ($(".header_area").length) {
-      $(window).scroll(function() {
+      $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll >= nav_offset_top) {
           $(".header_area").addClass("navbar_fixed");
@@ -23,11 +23,11 @@
 
   // Search Toggle
   $("#search_input_box").hide();
-  $("#search").on("click", function() {
+  $("#search").on("click", function () {
     $("#search_input_box").slideToggle("slow");
     $("#search_input").focus();
   });
-  $("#close_search").on("click", function() {
+  $("#close_search").on("click", function () {
     $("#search_input_box").slideUp("slow");
   });
 
@@ -47,7 +47,7 @@
         responsiveClass: true,
         thumbs: true,
         thumbsPrerendered: true,
-        navText: ["<img src='img/prev.png'>", "<img src='img/next.png'>"],
+        navText: ["<img src='userpage/img/prev.png'>", "<img src='userpage/img/next.png'>"],
         responsive: {
           0: {
             items: 1,

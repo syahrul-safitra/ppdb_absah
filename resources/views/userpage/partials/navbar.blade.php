@@ -44,6 +44,21 @@
                         </li>
                     </ul>
                 </li>
+                <li class="nav-item submenu dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">Pendaftaran Asli</a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="{{ url('https://psb.abshah.ponpes.id/public/psb/daftar') }}">Daftar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="{{ url('https://psb.abshah.ponpes.id/public/psb/daftar/cek-status') }}">Cek
+                                Pendaftaran</a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>

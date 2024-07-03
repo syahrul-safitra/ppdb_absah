@@ -332,7 +332,7 @@ class DaftarController extends Controller
      */
     public function destroy(Daftar $daftar)
     {
-        // Daftar::where('id', $daftar->id)->delete();
+        Daftar::where('id', $daftar->id)->delete();
         return redirect('daftar')->with('success', 'Data Pendaftaran Berhasil dihapus!');
     }
 

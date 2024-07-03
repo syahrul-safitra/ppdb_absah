@@ -87,6 +87,226 @@
     </section>
     <!--================ End Feature Area =================-->
 
+    <!--================ Start About Area =================-->
+    <section class="about_area section_gap">
+        <div class="container">
+            <div class="row h_blog_item">
+                <div class="col-lg-6">
+                    <div class="h_blog_img">
+                        <img class="img-fluid" src="{{ asset('userpage/img/gedung.jpg') }}" alt="" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h_blog_text">
+                        <div class="h_blog_text_inner left right">
+                            <h4> الْبَاقِيَاتُ الصَّالِحَاتُ</h4>
+                            <p>
+
+                                Pondok Pesantren Al-Baqiyatush Shalihat merupakan lembaga pendidikan islam yang mengkaji
+                                ilmu agama secara instensif. Mempunyai misi besar yaitu menjadi lembaga pendidikan yang
+                                membentuk santri berprestasi dan berakhlakhul karimah, ahli qur'an, kitab kuning, cerdas dan
+                                bertaqwa.
+                            </p>
+
+                            <a class="primary-btn" href="#">
+                                Learn More <i class="ti-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trainer_area section_gap_top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="main_title">
+                        <h2 class="mb-3">Unit Pendidikan Pesantren</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center d-flex align-items-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                    <div class="meta-text text-sm-center">
+                        <div class="d-flex justify-content-center mb-3"><img class="mx-auto"
+                                style="width: 50px; height:50px" src="{{ asset('userpage/img/mosque.png') }}"
+                                alt="" /></div>
+                        <h4>Madrasah I'idadiyah</h4>
+                        <div class="mb-4">
+                            <p>
+                                Madrasah I'dadiyah adalah program pendidikan untuk santri baru yang akan mendapatkan
+                                pendidikan dasar seperti membaca al-qur'an, membaca dan menulis arab melayu, pengantar nahwu
+                                & shorof.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                    <div class="meta-text text-sm-center">
+                        <div class="d-flex justify-content-center mb-3"><img class="mx-auto"
+                                style="width: 50px; height:50px" src="{{ asset('userpage/img/mosque-2.png') }}"
+                                alt="" /></div>
+                        <h4>Madrasah Diniyah Wustho</h4>
+                        <div class="mb-4">
+                            <p>
+                                Madrasah Diniyah Wustho adalah program pendidikan pasca I'dadiyah yang mengkaji tentang
+                                dasar ilmu alat seperti nahwu & shorof dengan tingkat menengah, dasar ilmu farai'dh, fiqih
+                                dsb.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+
+                    <div class="meta-text text-sm-center">
+                        <div class="d-flex justify-content-center mb-3"><img class="mx-auto"
+                                style="width: 50px; height:50px" src="{{ asset('userpage/img/kitab.png') }}"
+                                alt="" /></div>
+
+                        <h4>Madrasah Aliyah Salafi</h4>
+                        <div class="mb-4">
+                            <p>
+                                Madrasah Aliyah Salafi adalah program pendidikan pasca Diniyah Wustho yang mengkaji dengan
+                                lebih dalam ilmu alat nahwu & shorof, fiqih tingkat lanjut, ilmu balaqhah, mantiq dsb.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                    <div class="meta-text text-sm-center">
+                        <div class="d-flex justify-content-center mb-3"><img class="mx-auto"
+                                style="width: 50px; height:50px" src="{{ asset('userpage/img/kitab-2.png') }}"
+                                alt="" /></div>
+
+                        <h4>Madrasah Tahfidzil Qur'an & Tahsinul Qiro'ah</h4>
+                        <div class="mb-4">
+                            <p>
+                                Madrasah Tahfidzil Qur'an & Tahsinul Qiro'ah adalah program untuk santri yang ingin
+                                menghafal sekaligus memperindah bacaan al'qur'an.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                    <div class="meta-text text-sm-center">
+                        <div class="d-flex justify-content-center mb-3"><img class="mx-auto"
+                                style="width: 50px; height:50px" src="{{ asset('userpage/img/kitab-3.png') }}"
+                                alt="" /></div>
+
+                        <h4>Pendalaman Ilmu Alat (Nahwu & Shorof)</h4>
+                        <div class="mb-4">
+                            <p>
+                                Pendalaman Ilmu Alat program pendidikan bagi santri untuk mengkaji lebih dalam mengenai ilmu
+                                Nahwu & Shorof.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                    <div class="meta-text text-sm-center">
+                        <div class="d-flex justify-content-center mb-3"><img class="mx-auto"
+                                style="width: 50px; height:50px" src="{{ asset('userpage/img/arabic.png') }}"
+                                alt="" /></div>
+                        <h4>Lembaga Bahasa Arab</h4>
+                        <div class="mb-4">
+                            <p>
+                                Lembaga Bahasa Arab adalah program pendidikan bagi santri yang ingin belajar bahasa arab
+                                dengan lebih dalam lagi.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    {{-- Start Fasilitas --}}
+    <section class="trainer_area section_gap_top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5">
+                    <div class="main_title">
+                        <h2 class="mb-3">Fasilitas</h2>
+                        <p>
+                            Fasilitas Pondok Pesantren Al-Baqiyatsuh Shalihat
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center d-flex align-items-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                    <div class="thumb d-flex justify-content-sm-center">
+                        <img class="img-fluid" src="{{ asset('userpage/img/fasilitas1.jpg') }}" alt="" />
+                    </div>
+                    <div class="meta-text text-sm-center">
+                        <h4>Fasilitas 1</h4>
+                        <div class="mb-4">
+                            <p>
+                                If you are looking at blank cassettes on the web, you may be
+                                very confused at the.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                    <div class="thumb d-flex justify-content-sm-center">
+                        <img class="img-fluid" src="{{ asset('userpage/img/fasilitas2.jpg') }}" alt="" />
+                    </div>
+                    <div class="meta-text text-sm-center">
+                        <h4>Fasilitas 2</h4>
+                        <div class="mb-4">
+                            <p>
+                                If you are looking at blank cassettes on the web, you may be
+                                very confused at the.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                    <div class="thumb d-flex justify-content-sm-center">
+                        <img class="img-fluid" src="{{ asset('userpage/img/fasilitas3.jpg') }}" alt="" />
+                    </div>
+                    <div class="meta-text text-sm-center">
+                        <h4>Fasilitas 3</h4>
+                        <div class="mb-4">
+                            <p>
+                                If you are looking at blank cassettes on the web, you may be
+                                very confused at the.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                    <div class="thumb d-flex justify-content-sm-center">
+                        <img class="img-fluid" src="{{ asset('userpage/img/fasilitas3.jpg') }}" alt="" />
+                    </div>
+                    <div class="meta-text text-sm-center">
+                        <h4>Fasilitas 4</h4>
+                        <div class="mb-4">
+                            <p>
+                                If you are looking at blank cassettes on the web, you may be
+                                very confused at the.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- End Fasilitas --}}
+
     <!--================ Start Popular Courses Area =================-->
     <div class="popular_courses">
         <div class="container">
@@ -130,8 +350,9 @@
     </div>
     <!--================ End Popular Courses Area =================-->
 
+
     <!--================ Start Registration Area =================-->
-    <div class="section_gap registration_area">
+    {{-- <div class="section_gap registration_area">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7">
@@ -170,7 +391,8 @@
                             <div class="row">
                                 <div class="col-lg-12 form_group">
                                     <input name="name" placeholder="Your Name" required="" type="text" />
-                                    <input name="name" placeholder="Your Phone Number" required="" type="tel" />
+                                    <input name="name" placeholder="Your Phone Number" required=""
+                                        type="tel" />
                                     <input name="email" placeholder="Your Email Address"
                                         pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required=""
                                         type="email" />
@@ -184,11 +406,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--================ End Registration Area =================-->
 
     <!--================ Start Trainers Area =================-->
-    <section class="trainer_area section_gap_top">
+    {{-- <section class="trainer_area section_gap_top">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-5">
@@ -290,11 +512,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--================ End Trainers Area =================-->
 
     <!--================ Start Events Area =================-->
-    <div class="events_area">
+    {{-- <div class="events_area">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-5">
@@ -369,130 +591,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--================ End Events Area =================-->
-
-    <!--================ Start Testimonial Area =================-->
-    <div class="testimonial_area section_gap">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-5">
-                    <div class="main_title">
-                        <h2 class="mb-3">Client say about me</h2>
-                        <p>
-                            Replenish man have thing gathering lights yielding shall you
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="testi_slider owl-carousel">
-                    <div class="testi_item">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <img src="img/testimonials/t1.jpg" alt="" />
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="testi_text">
-                                    <h4>Elite Martin</h4>
-                                    <p>
-                                        Him, made can't called over won't there on divide there
-                                        male fish beast own his day third seed sixth seas unto.
-                                        Saw from
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testi_item">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <img src="img/testimonials/t2.jpg" alt="" />
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="testi_text">
-                                    <h4>Davil Saden</h4>
-                                    <p>
-                                        Him, made can't called over won't there on divide there
-                                        male fish beast own his day third seed sixth seas unto.
-                                        Saw from
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testi_item">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <img src="img/testimonials/t1.jpg" alt="" />
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="testi_text">
-                                    <h4>Elite Martin</h4>
-                                    <p>
-                                        Him, made can't called over won't there on divide there
-                                        male fish beast own his day third seed sixth seas unto.
-                                        Saw from
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testi_item">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <img src="img/testimonials/t2.jpg" alt="" />
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="testi_text">
-                                    <h4>Davil Saden</h4>
-                                    <p>
-                                        Him, made can't called over won't there on divide there
-                                        male fish beast own his day third seed sixth seas unto.
-                                        Saw from
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testi_item">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <img src="img/testimonials/t1.jpg" alt="" />
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="testi_text">
-                                    <h4>Elite Martin</h4>
-                                    <p>
-                                        Him, made can't called over won't there on divide there
-                                        male fish beast own his day third seed sixth seas unto.
-                                        Saw from
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testi_item">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <img src="img/testimonials/t2.jpg" alt="" />
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="testi_text">
-                                    <h4>Davil Saden</h4>
-                                    <p>
-                                        Him, made can't called over won't there on divide there
-                                        male fish beast own his day third seed sixth seas unto.
-                                        Saw from
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--================ End Testimonial Area =================-->
 @endsection
