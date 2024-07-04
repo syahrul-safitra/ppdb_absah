@@ -11,18 +11,18 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                <li class="nav-item {{ Request::is('/') ? 'active' : null }}">
+                    <a class="nav-link" href="{{ url('/') }}">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about-us.html">Profil</a>
+                <li class="nav-item {{ Request::is('sejarah') ? 'active' : null }}">
+                    <a class="nav-link" href="{{ url('sejarah') }}">Profil</a>
                 </li>
-                <li class="nav-item submenu dropdown">
+                {{-- <li class="nav-item {{ Request::is('sejarah') ? 'active' : null }} submenu dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
-                        aria-haspopup="true" aria-expanded="false">About</a>
+                        aria-haspopup="true" aria-expanded="false">Profil</a>
                     <ul class="dropdown-menu">
-                        <li class="nav-item">
-                            <a class="nav-link" href="courses.html">Sejarah Ponpes</a>
+                        <li class="nav-item {{ Request::is('sejarah') ? 'active' : null }}">
+                            <a class="nav-link" href="{{ url('sejarah') }}">Sejarah Ponpes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="course-details.html">Visi Misi</a>
@@ -31,7 +31,7 @@
                             <a class="nav-link" href="elements.html">Elements</a>
                         </li>
                     </ul>
-                </li>
+                </li> --}}
                 <li class="nav-item submenu dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                         aria-haspopup="true" aria-expanded="false">Pendaftaran</a>
@@ -44,7 +44,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item submenu dropdown">
+                {{-- <li class="nav-item submenu dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button"
                         aria-haspopup="true" aria-expanded="false">Pendaftaran Asli</a>
                     <ul class="dropdown-menu">
@@ -58,10 +58,10 @@
                                 Pendaftaran</a>
                         </li>
                     </ul>
-                </li>
-                <li class="nav-item">
+                </li> --}}
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+                </li> --}}
                 @guest
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('login') }}">Login</a>

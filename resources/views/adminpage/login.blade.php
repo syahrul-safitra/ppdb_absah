@@ -44,12 +44,24 @@
                             <form class="pt-3" action="{{ url('login') }}" method="POST">
                                 @csrf
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control form-control-lg"
+                                    <input type="email" name="email"
+                                        class="form-control form-control-lg @error('email') 'is-invalid' @enderror"
                                         id="exampleInputEmail1" placeholder="Email">
+                                    @error('email')
+                                        <div class="invalid-feedback d-block">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" name="password" class="form-control form-control-lg"
+                                    <input type="password" name="password"
+                                        class="form-control form-control-lg @error('password') 'is-invalid' @enderror"
                                         id="exampleInputPassword1" placeholder="Password">
+                                    @error('email')
+                                        <div class="invalid-feedback d-block">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                                 </div>
                                 <div class="mt-3">
                                     {{-- <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn"

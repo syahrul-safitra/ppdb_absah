@@ -42,7 +42,7 @@
                                             <form action="{{ url('informasi/' . $data->id) }}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
-                                                <div class="btn btn btn-danger btn-delete-pendaftaran "
+                                                <div class="btn btn btn-danger btn-delete-informasi "
                                                     style="padding-top: 2px; padding-bottom: 2px; padding-left: 5px; padding-right: 5px">
                                                     <i class="ti ti-trash"></i>
                                                 </div>

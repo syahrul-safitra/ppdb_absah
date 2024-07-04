@@ -1,20 +1,20 @@
 @extends('userpage.layouts.main')
 
 @section('container')
-    {{-- <section class="banner_area">
+    <section class="banner_area">
         <div class="banner_inner d-flex align-items-center">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2></h2>
+                            <h2>Berita</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
     <!--================ Start Course Details Area =================-->
     <section class="course_details_area section_gap">
         <div class="container">

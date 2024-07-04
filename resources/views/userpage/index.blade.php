@@ -49,7 +49,7 @@
                                 src="{{ asset('userpage/img/image/graduation-cap.png') }}" alt=""></div>
                         <div class="desc">
                             <h4 class="mt-3 mb-2">Alumni</h4>
-                            <p><span class="text-primary">10000 </span>Jumlah Alumni Pondok Pesantren Al-Baqiyatush
+                            <p><span class="text-primary">5403 </span>Jumlah Alumni Pondok Pesantren Al-Baqiyatush
                                 Shalihat</p>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                                 src="{{ asset('userpage/img/image/muslim.png') }}" alt=""></div>
                         <div class="desc">
                             <h4 class="mt-3 mb-2">Santri</h4>
-                            <p><span class="text-primary">10000 </span>Jumlah Santri Pondok Pesantren Al-Baqiyatush
+                            <p><span class="text-primary">1345 </span>Jumlah Santri Pondok Pesantren Al-Baqiyatush
                                 Shalihat</p>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                         <div class="desc">
                             <h4 class="mt-3 mb-2">Guru</h4>
                             <p>
-                            <p><span class="text-primary">10000 </span>Jumlah Guru Pondok Pesantren Al-Baqiyatush Shalihat
+                            <p><span class="text-primary">48 </span>Jumlah Guru Pondok Pesantren Al-Baqiyatush Shalihat
                             </p>
                             </p>
                         </div>
@@ -108,8 +108,8 @@
                                 bertaqwa.
                             </p>
 
-                            <a class="primary-btn" href="#">
-                                Learn More <i class="ti-arrow-right ml-1"></i>
+                            <a class="primary-btn" href="{{ url('sejarah') }}">
+                                Selengkapnya <i class="ti-arrow-right ml-1"></i>
                             </a>
                         </div>
                     </div>
@@ -248,12 +248,12 @@
                         <img class="img-fluid" src="{{ asset('userpage/img/fasilitas1.jpg') }}" alt="" />
                     </div>
                     <div class="meta-text text-sm-center">
-                        <h4>Fasilitas 1</h4>
+                        <h4>Asrama Putra</h4>
                         <div class="mb-4">
-                            <p>
+                            {{-- <p>
                                 If you are looking at blank cassettes on the web, you may be
                                 very confused at the.
-                            </p>
+                            </p> --}}
                         </div>
                     </div>
                 </div>
@@ -263,12 +263,12 @@
                         <img class="img-fluid" src="{{ asset('userpage/img/fasilitas2.jpg') }}" alt="" />
                     </div>
                     <div class="meta-text text-sm-center">
-                        <h4>Fasilitas 2</h4>
+                        <h4>Asrama Putri</h4>
                         <div class="mb-4">
-                            <p>
+                            {{-- <p>
                                 If you are looking at blank cassettes on the web, you may be
                                 very confused at the.
-                            </p>
+                            </p> --}}
                         </div>
                     </div>
                 </div>
@@ -278,27 +278,43 @@
                         <img class="img-fluid" src="{{ asset('userpage/img/fasilitas3.jpg') }}" alt="" />
                     </div>
                     <div class="meta-text text-sm-center">
-                        <h4>Fasilitas 3</h4>
+                        <h4>Gedung Belajar</h4>
                         <div class="mb-4">
-                            <p>
+                            {{-- <p>
                                 If you are looking at blank cassettes on the web, you may be
                                 very confused at the.
-                            </p>
+                            </p> --}}
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
                     <div class="thumb d-flex justify-content-sm-center">
-                        <img class="img-fluid" src="{{ asset('userpage/img/fasilitas3.jpg') }}" alt="" />
+                        <img class="img-fluid" style="height: 200px" src="{{ asset('userpage/img/fasilitas4.jpg') }}"
+                            alt="" />
                     </div>
                     <div class="meta-text text-sm-center">
-                        <h4>Fasilitas 4</h4>
+                        <h4>Loundry</h4>
                         <div class="mb-4">
-                            <p>
+                            {{-- <p>
                                 If you are looking at blank cassettes on the web, you may be
                                 very confused at the.
-                            </p>
+                            </p> --}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 single-trainer">
+                    <div class="thumb d-flex justify-content-sm-center">
+                        <img class="img-fluid" style="height: 200px" src="{{ asset('userpage/img/fasilitas5.jpg') }}"
+                            alt="" />
+                    </div>
+                    <div class="meta-text text-sm-center">
+                        <h4>Toko Kitab</h4>
+                        <div class="mb-4">
+                            {{-- <p>
+                                If you are looking at blank cassettes on the web, you may be
+                                very confused at the.
+                            </p> --}}
                         </div>
                     </div>
                 </div>
@@ -330,6 +346,7 @@
                                     <img class="img-fluid" src="{{ asset('storage/' . $item->file) }}" alt="" />
                                 </div>
                                 <div class="course_content" style="height: 150px;overflow:hidden">
+                                    <p>{{ date('d-m-Y', strtotime($item->tanggal)) }}</p>
                                     <h4 class="mb-3">
                                         <a href="{{ url('informasis/' . $item->id) }}">{{ $item->judul }}</a>
                                     </h4>
@@ -350,7 +367,36 @@
     </div>
     <!--================ End Popular Courses Area =================-->
 
+    {{-- YT Channel --}}
+    <section class="about_area section_gap">
+        <div class="container">
+            <div class="row h_blog_item">
+                <div class="col-lg-8">
+                    <div class="h_blog_img ">
+                        <iframe class="embed-responsive" width="560" height="315"
+                            src="https://www.youtube.com/embed/1ChKCzLcp4M?si=E7IItKhJoe5Mxty2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="h_blog_text">
+                        <div class="h_blog_text_inner left right">
 
+                            <p>Subscribe youtube kami untuk mengetahui lebih banyak kegiatan di Pondok</p>
+                            <a class="primary-btn" href="https://www.youtube.com/@PondokAbshah">
+                                <i class="fa-brands fa-youtube" style="margin-right: 5px"></i>You Tube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{-- End YT Channel --}}
     <!--================ Start Registration Area =================-->
     {{-- <div class="section_gap registration_area">
         <div class="container">

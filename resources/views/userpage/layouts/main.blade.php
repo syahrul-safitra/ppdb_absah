@@ -5,8 +5,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-    <title>Edustage Education</title>
+    <link rel="icon" href="{{ asset('userpage/img/LOGO_ABSHAH.png') }}" type="image/png" />
+    <title>Pondok Pesantren Al Baqiyatush Shalihat</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('userpage/css/bootstrap.css') }}" />
     <link rel="stylesheet" href="{{ asset('userpage/css/flaticon.css') }}" />
@@ -45,14 +45,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-6 single-footer-widget">
-                    <h4>Alamat</h4>
+                    <h4>Media Sosial</h4>
                     <ul>
-                        <li><i class="fa-solid fa-location-dot"></i><a
+                        <li><i class="fa-solid fa-location-dot" style="margin-right: 10px"></i><a
                                 href="https://www.bing.com/maps?osid=9d97ebf6-d877-4a86-97eb-efd07ff58bff&cp=-0.834266~103.448392&lvl=17&pi=0&imgid=1bb08451-0f58-4b24-b8a5-1c04f28eb59b&v=2&sV=2&form=S00027">
                                 JL. Prof.DR.Sri Soedewi, Tungkal Ilir 36514 Kelurahan Sungai Nibung
                                 Jambi</a></li>
-                        <li><i class="fa-solid fa-address-book"></i> No Telepon</li>
-                        <li><i class="fa-solid fa-envelope"></i> Email</li>
+                        <li><i class="fa-brands fa-whatsapp" style="margin-right: 10px"></i><a
+                                href="https://api.whatsapp.com/send/?phone=6285764234212&text=Assalamu%27alaikum&type=phone_number&app_absent=0">+62
+                                857-6423-4212</a></li>
+                        <li><i class="fa-brands fa-youtube" style="margin-right: 10px"></i><a
+                                href="https://www.youtube.com/@PondokAbshah">Pondok Absah</a></li>
+                        <li><i class="fa-brands fa-facebook" style="margin-right: 10px"></i><a
+                                href="https://www.facebook.com/abshah1993">Pondok Pesantren Al Baqiyatush Shalihat</a>
+                        </li>
+                        <li><i class="fa-brands fa-tiktok" style="margin-right: 10px"></i><a
+                                href="https://www.tiktok.com/@pp.abshah.official">pp.absah.official</a>
+                        </li>
                     </ul>
                 </div>
                 {{-- <div class="col-lg-2 col-md-6 single-footer-widget">
@@ -115,12 +124,6 @@
                         aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
-                <div class="col-lg-4 col-sm-12 footer-social">
-                    <a href="#"><i class="ti-facebook"></i></a>
-                    <a href="#"><i class="ti-twitter"></i></a>
-                    <a href="#"><i class="ti-dribbble"></i></a>
-                    <a href="#"><i class="ti-linkedin"></i></a>
-                </div>
             </div>
         </div>
     </footer>

@@ -3,6 +3,7 @@
 use App\Http\Controllers\DaftarController;
 use App\Http\Controllers\InformasiController;
 use App\Http\Controllers\LoginController;
+use App\Models\Daftar;
 use App\Models\Informasi;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
@@ -30,7 +31,18 @@ Route::get('informasi', function () {
 })->middleware('auth');
 
 Route::get('dashboard', function () {
-    return view('adminpage.index');
+
+    $totalSantriMendaftar = Daftar::all()->count();
+    $totalSantriYangDiterima = Daftar::where('status_diterima', 'diterima')->get()->count();
+    $totalSantriYangBelumDiterima = Daftar::where('status_diterima', 'belum')->get()->count();
+    $totalBerita = Informasi::all()->count();
+
+    return view('adminpage.index', [
+        'totalSantriYgMendaftar' => $totalSantriMendaftar,
+        'totalSantriYgDiterima' => $totalSantriYangDiterima,
+        'totalSantriYgBlmDiterima' => $totalSantriYangBelumDiterima,
+        'totalBerita' => $totalBerita
+    ]);
 })->middleware('auth');
 
 Route::get('cek', [DaftarController::class, 'cek']);
@@ -56,3 +68,8 @@ Route::resource('daftar', DaftarController::class)->middleware('auth');
 Route::get('informasis/{informasi}', [InformasiController::class, 'lihat']);
 // data input select ajax : 
 Route::get('daftarnamakabupaten', [DaftarController::class, 'dataKabupatenAjax']);
+
+// Profil : 
+Route::get('sejarah', function () {
+    return view('userpage.profil');
+});

@@ -1,7 +1,7 @@
 @extends('adminpage.layouts.main')
 
 @section('container')
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-md-12 grid-margin">
             <div class="row">
                 <div class="col-12 col-xl-8 mb-4 mb-xl-0">
@@ -28,9 +28,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <div class="row">
-        <div class="col-md-6 grid-margin stretch-card">
+        {{-- <div class="col-md-6 grid-margin stretch-card">
             <div class="card tale-bg">
                 <div class="card-people mt-auto">
                     <img src="images/dashboard/people.svg" alt="people">
@@ -47,24 +47,22 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 grid-margin transparent">
+        </div> --}}
+        <div class="col-md-12 grid-margin transparent">
             <div class="row">
                 <div class="col-md-6 mb-4 stretch-card transparent">
                     <div class="card card-tale">
                         <div class="card-body">
-                            <p class="mb-4">Today’s Bookings</p>
-                            <p class="fs-30 mb-2">4006</p>
-                            <p>10.00% (30 days)</p>
+                            <p class="mb-4">Jumlah santri yang mendaftar</p>
+                            <p class="fs-30 mb-2">{{ $totalSantriYgMendaftar }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4 stretch-card transparent">
                     <div class="card card-dark-blue">
                         <div class="card-body">
-                            <p class="mb-4">Total Bookings</p>
-                            <p class="fs-30 mb-2">61344</p>
-                            <p>22.00% (30 days)</p>
+                            <p class="mb-4">Jumlah santri yang diterima</p>
+                            <p class="fs-30 mb-2">{{ $totalSantriYgDiterima }}</p>
                         </div>
                     </div>
                 </div>
@@ -73,25 +71,23 @@
                 <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
                     <div class="card card-light-blue">
                         <div class="card-body">
-                            <p class="mb-4">Number of Meetings</p>
-                            <p class="fs-30 mb-2">34040</p>
-                            <p>2.00% (30 days)</p>
+                            <p class="mb-4">Jumlah santri yang belum diterima</p>
+                            <p class="fs-30 mb-2">{{ $totalSantriYgBlmDiterima }}</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 stretch-card transparent">
                     <div class="card card-light-danger">
                         <div class="card-body">
-                            <p class="mb-4">Number of Clients</p>
-                            <p class="fs-30 mb-2">47033</p>
-                            <p>0.22% (30 days)</p>
+                            <p class="mb-4">Jumlah berita</p>
+                            <p class="fs-30 mb-2">{{ $totalBerita }}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-md-6 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
@@ -166,10 +162,9 @@
                                                             <td class="text-muted">Illinois</td>
                                                             <td class="w-100 px-0">
                                                                 <div class="progress progress-md mx-4">
-                                                                    <div class="progress-bar bg-primary"
-                                                                        role="progressbar" style="width: 70%"
-                                                                        aria-valuenow="70" aria-valuemin="0"
-                                                                        aria-valuemax="100"></div>
+                                                                    <div class="progress-bar bg-primary" role="progressbar"
+                                                                        style="width: 70%" aria-valuenow="70"
+                                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                                 </div>
                                                             </td>
                                                             <td>
@@ -181,10 +176,9 @@
                                                             <td class="text-muted">Washington</td>
                                                             <td class="w-100 px-0">
                                                                 <div class="progress progress-md mx-4">
-                                                                    <div class="progress-bar bg-warning"
-                                                                        role="progressbar" style="width: 30%"
-                                                                        aria-valuenow="30" aria-valuemin="0"
-                                                                        aria-valuemax="100"></div>
+                                                                    <div class="progress-bar bg-warning" role="progressbar"
+                                                                        style="width: 30%" aria-valuenow="30"
+                                                                        aria-valuemin="0" aria-valuemax="100"></div>
                                                                 </div>
                                                             </td>
                                                             <td>
@@ -760,5 +754,5 @@
 
 
         </div>
-    </div>
+    </div> --}}
 @endsection
